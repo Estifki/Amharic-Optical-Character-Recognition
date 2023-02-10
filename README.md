@@ -1,4 +1,4 @@
-# amharic_ocr
+# Amharic ocr
 
 A new Flutter project.
 
