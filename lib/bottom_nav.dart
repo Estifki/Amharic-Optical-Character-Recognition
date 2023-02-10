@@ -19,10 +19,13 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
     return Scaffold(
       body: _screens.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: AppColor.secondayColorCustom,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.grey.shade600,
+        backgroundColor: Colors.grey.shade50,
+        elevation: 0.0,
+        selectedItemColor: AppColor.secondayColorCustom,
+        unselectedItemColor: Colors.grey.shade500,
         currentIndex: _selectedIndex,
+        selectedFontSize: 14,
+        unselectedFontSize: 14,
         onTap: (index) {
           setState(() {
             _selectedIndex = index;
@@ -30,8 +33,9 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         },
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.adf_scanner_outlined), label: "Scan"),
-          BottomNavigationBarItem(icon: Icon(Icons.receipt), label: "Recent")
+              icon: Icon(Icons.adf_scanner_outlined, size: 22), label: "Scan"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.receipt, size: 22), label: "Recent")
         ],
       ),
     );
