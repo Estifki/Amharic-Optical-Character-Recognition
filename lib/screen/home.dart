@@ -192,9 +192,10 @@ class _HomePageState extends State<HomeScreen> {
                     ))
                   : const Center(
                       child: Text(
-                        "Scanned Document Will Be Shown Here",
+                        "Scanned Document Will Be Shown Here\n long press then copy",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w500),
+                            fontSize: 15, fontWeight: FontWeight.w500),
                       ),
                     ),
               const SizedBox(height: 40),
