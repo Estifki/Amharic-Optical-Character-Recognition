@@ -56,7 +56,7 @@ dev_dependencies:
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/1024.png"
+  image_path: "assets/amhric_logo.PNG"
   adaptive_icon_background: "#ffffff"
   adaptive_icon_foreground: "assets/1024.png"
 
