@@ -27,13 +27,15 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.22,
-            child: Image.asset("assets/splash.gif"),
+            height: MediaQuery.of(context).size.height * 0.24,
+            child: Image.asset(
+              "assets/splash.gif",
+            ),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 8),
           const Text(
             "ዲጂታል ምስሎች ወደ ጽሑፍ",
-            style: TextStyle(fontSize: 18, fontFamily: "Nokia"),
+            style: TextStyle(fontSize: 19, fontFamily: "Nokia"),
           )
         ],
       )),
