@@ -56,10 +56,7 @@ class _HomePageState extends State<HomeScreen> {
                         height: screenSize.height * 0.36,
                         width: screenSize.width,
                         color: Colors.grey.shade300,
-                        child: const Icon(
-                          Icons.image,
-                          size: 70,
-                        ),
+                        child: const Icon(Icons.image, size: 70),
                       ),
                     )
                   : GestureDetector(
