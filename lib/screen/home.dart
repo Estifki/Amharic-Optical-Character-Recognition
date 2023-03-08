@@ -184,7 +184,10 @@ class _HomePageState extends State<HomeScreen> {
                   ? Center(
                       child: Padding(
                       padding: const EdgeInsets.only(left: 15.0, right: 15),
-                      child: SelectableText(_extractedText),
+                      child: SelectableText(
+                        _extractedText,
+                        style: TextStyle(fontSize: 18, fontFamily: "Nokia"),
+                      ),
                     ))
                   : const Center(
                       child: Text(

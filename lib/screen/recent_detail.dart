@@ -18,7 +18,7 @@ class RecentDetailScreen extends StatelessWidget {
         padding: const EdgeInsets.only(left: 15.0, right: 15.0),
         child: SelectableText(
           text,
-          style: const TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 18, fontFamily: "Nokia"),
         ),
       )),
     );
