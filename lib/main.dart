@@ -1,6 +1,7 @@
-import 'package:amharic_ocr/screen/splash.dart';
+// import 'package:amharic_ocr/screen/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'bottom_nav.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Amharic OCR',
-      home: SplashScreen(),
+      home: BottomNavScreen(),
     );
   }
 }

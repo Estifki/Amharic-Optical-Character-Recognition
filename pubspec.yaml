@@ -50,6 +50,7 @@ dev_dependencies:
   hive_generator: ^2.0.0
   build_runner: ^2.3.2
   flutter_launcher_icons: ^0.11.0
+  flutter_native_splash: 
 
 
 flutter_icons:
@@ -58,6 +59,16 @@ flutter_icons:
   image_path: "assets/amhric_logo.PNG"
   adaptive_icon_background: "#ffffff"
   adaptive_icon_foreground: "assets/1024.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/Capture01.PNG
+  # branding: assets/branding-production.png
+
+  android_12:
+    image: assets/Capture01.PNG
+    icon_background_color: "#ffffff"
+  web: false
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
