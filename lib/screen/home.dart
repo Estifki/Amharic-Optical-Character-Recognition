@@ -34,14 +34,14 @@ class _HomePageState extends State<HomeScreen> {
 
     return Scaffold(
       // bottomNavigationBar: _isAdLoaded
-          // ? SizedBox(
-          //     height: _bannerAd.size.height.toDouble(),
-          //     width: _bannerAd.size.width.toDouble(),
-          //     child: AdWidget(
-          //       ad: _bannerAd,
-          //     ),
-          //   )
-          // : const SizedBox(),
+      // ? SizedBox(
+      //     height: _bannerAd.size.height.toDouble(),
+      //     width: _bannerAd.size.width.toDouble(),
+      //     child: AdWidget(
+      //       ad: _bannerAd,
+      //     ),
+      //   )
+      // : const SizedBox(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(top: screenSize.height * 0.06),
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomeScreen> {
                         color: Colors.grey.shade300,
                         child: const Icon(
                           Icons.image,
-                          size: 50,
+                          size: 70,
                         ),
                       ),
                     )
