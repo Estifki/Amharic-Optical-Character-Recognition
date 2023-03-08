@@ -1,3 +1,4 @@
+import 'package:amharic_ocr/const.dart';
 import 'package:flutter/material.dart';
 
 class RecentDetailScreen extends StatelessWidget {
@@ -10,7 +11,10 @@ class RecentDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey.shade50,
-        foregroundColor: Colors.black,
+        leading: GestureDetector(
+            onTap: () => Navigator.of(context).pop(),
+            child: Icon(Icons.arrow_back_ios,
+                color: AppColor.secondayColorCustom, size: 24)),
         elevation: 0.0,
       ),
       body: Center(

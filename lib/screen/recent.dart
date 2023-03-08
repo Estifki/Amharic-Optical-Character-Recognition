@@ -44,13 +44,17 @@ class _RecentScreenState extends State<RecentScreen> {
                             const EdgeInsets.only(top: 16, left: 10, right: 10),
                         child: Stack(children: [
                           SizedBox(
-                            height: 74,
+                            height: 80,
                             width: screenSize.width,
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Padding(
                                 padding: const EdgeInsets.only(right: 15.0),
-                                child: Text(_recentData[index]),
+                                child: Text(
+                                  _recentData[index],
+                                  style: TextStyle(
+                                      fontSize: 16, fontFamily: "Nokia"),
+                                ),
                               ),
                             ),
                           ),
@@ -73,11 +77,11 @@ class _RecentScreenState extends State<RecentScreen> {
                                       )),
                                 )
                               : const Positioned(
-                                  right: 5,
+                                  right: 8,
                                   bottom: 27,
                                   child: Icon(
                                     Icons.arrow_forward_ios,
-                                    size: 20,
+                                    size: 19,
                                     color: AppColor.secondayColorCustom,
                                   ))
                         ]),
