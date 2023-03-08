@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.amharic_ocr">
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
    <application
-        android:label="Amharic OCR"
+        android:label="Amharic OCR - Image To Text"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
@@ -33,6 +33,6 @@
             android:value="2" />
         <!-- <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4854784634755115~2419821842"/> -->
+            android:value=""/> -->
     </application>
 </manifest>

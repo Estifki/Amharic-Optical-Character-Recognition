@@ -5,7 +5,7 @@ import 'bottom_nav.dart';
 
 void main() async {
   await Hive.initFlutter();
-  WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsFlutterBinding.ensureInitialized();
   // MobileAds.instance.initialize();
   Hive.openBox("RecentScan");
   runApp(const MyApp());
