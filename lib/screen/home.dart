@@ -2,7 +2,6 @@ import 'dart:io';
 import 'package:amharic_ocr/const.dart';
 import 'package:amharic_ocr/services/hive.dart';
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:flutter_tesseract_ocr/flutter_tesseract_ocr.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -20,29 +19,29 @@ class _HomePageState extends State<HomeScreen> {
   bool _isScanLoading = false;
   dynamic _pathForTessarect;
 
-  late BannerAd _bannerAd;
+  // late BannerAd _bannerAd;
   bool _isAdLoaded = false;
 
-  @override
-  void initState() {
-    super.initState();
-    _initBannerAd();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _initBannerAd();
+  // }
 
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
-      bottomNavigationBar: _isAdLoaded
-          ? SizedBox(
-              height: _bannerAd.size.height.toDouble(),
-              width: _bannerAd.size.width.toDouble(),
-              child: AdWidget(
-                ad: _bannerAd,
-              ),
-            )
-          : const SizedBox(),
+      // bottomNavigationBar: _isAdLoaded
+          // ? SizedBox(
+          //     height: _bannerAd.size.height.toDouble(),
+          //     width: _bannerAd.size.width.toDouble(),
+          //     child: AdWidget(
+          //       ad: _bannerAd,
+          //     ),
+          //   )
+          // : const SizedBox(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(top: screenSize.height * 0.06),
@@ -206,18 +205,18 @@ class _HomePageState extends State<HomeScreen> {
     );
   }
 
-  _initBannerAd() {
-    _bannerAd = BannerAd(
-        size: AdSize.banner,
-        adUnitId: "ca-app-pub-3940256099942544/6300978111",
-        listener: BannerAdListener(onAdLoaded: (_) {
-          setState(() {
-            _isAdLoaded = true;
-          });
-        }),
-        request: const AdRequest());
-    _bannerAd.load();
-  }
+  // _initBannerAd() {
+  //   _bannerAd = BannerAd(
+  //       size: AdSize.banner,
+  //       adUnitId: "ca-app-pub-3940256099942544/6300978111",
+  //       listener: BannerAdListener(onAdLoaded: (_) {
+  //         setState(() {
+  //           _isAdLoaded = true;
+  //         });
+  //       }),
+  //       request: const AdRequest());
+  //   _bannerAd.load();
+  // }
 
   Future<void> pickImageFromGallery() async {
     _extractedText = "";
